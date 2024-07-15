@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+section{
+    color: rgb(255, 255, 255);
+}
+h3{
+    padding-left: 500px;
+    
+}
+#z{
+    width: 200px;
+    height: 200px;
+    float: right;
+    padding-top: 50px;
+    padding-right: 150px;
+}
+a{
+    text-decoration: double;
+}
