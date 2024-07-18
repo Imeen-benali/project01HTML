@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #08183A;
+    background: linear-gradient(to bottom, #08183A 0%, #152852 20%, #4B3D60 40%, #FD5E53 60%, #FC9C54 80%, #FFE373 100%);
+    background: -webkit-linear-gradient(top, #08183A 0%, #152852 20%, #4B3D60 40%, #FD5E53 60%, #FC9C54 80%, #FFE373 100%);
+    background: -moz-linear-gradient(top, #08183A 0%, #152852 20%, #4B3D60 40%, #FD5E53 60%, #FC9C54 80%, #FFE373 100%);
+    color: honeydew;
+    margin: 0;
+    padding-top: 50px;
+    font-family: Source Code Pro, sans-serif;
+    font-size: 1em;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2D3D55; 
+    height: 50px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.navbar-ul { 
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 1em 0 1em;
+}
+
+.navbar-li { 
+    font-size: 1.0em;
+    font-weight: 600;
+}
+
+.navbar-link:hover {
+    color: rgb(168, 122, 201);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+#welcome-cont {
+    margin: auto;
+}
+
+.sec-main {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+#about-div {
+    margin: auto;
+    padding: 0 2em;
+}
+
+#projects {
+    justify-content: space-around;
+    margin: auto 2em;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.project-tile {
+    width: 100%;
+    height: auto;
+    background-color: cadetblue;
+    margin-bottom: 1em;
+}
+
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    color: honeydew;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0 5% 0 5%;
+    overflow: hidden;
+}
+
+#contact-desc {
+    margin-top: 10%;
+    align-self: center;
+}
+
+.contacts-links {
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.contact-link {
+    font-size: 0.75em;
+    width: 180px;
+    height: 65px;
+    line-height: 50px;
+    display: flex;
+    transition: font-size 1s, line-height 1s, color 1s;
+}
+
+.contact-link:hover {
+    color: rgb(214, 63, 36);
+    line-height: 65px;
+    font-size: 1em;
+    transition: font-size 1s, line-height 1s, color 1s;
+}
+
+.contacts-img {
+    width: auto;
+    height: 50px;
+    max-height: 100%;
+    display: block;
+    transition: height 1s;
+}
+img{
+    float: right;
+    width: 100px;
+    height: 100px;
+    padding-left: 40px;
+}
+#sun {
+    width: 200px;
+    height: 100px;
+    background-color: gold;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    margin: auto auto 0 auto;
+    align-self: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #ac3131;
+    animation: sunshine 5s infinite, suncolor 14s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    z-index: -1;
+}
+
+@keyframes suncolor {
+    0% {
+        background-color: #f9d71c;
+    }
+    100% {
+        background-color: #f9a01c;
+    }
+}
+
+@keyframes sunshine {
+    from {
+        box-shadow: 0px 0px 50px 20px #c98647;
+    }
+    to {
+        box-shadow: 0px 0px 200px 200px #c98647;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+    color: #EA4D22;
+    font-family: monospace;
+    width: 100%;
+    z-index: 5;
+}
+
+.footer-link {
+    color: #EA4D22;
+}
+
+
+@media screen and (min-width: 800px) {
+    .navbar-ul {
+        justify-content: flex-end;
+    }
+    .navbar-li {
+        margin: 0 2em;
+    }
+    #projects {
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    .projects-title {
+        width: 100%;
+        text-align: center;
+    }
+    .project-tile {
+        width: 44%;
+    }
+    .contacts-links {
+        flex-flow: row;
+    }
+}
+div.container {
+    text-align: center;
+  }
+  
+  ul.myUL {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+
+}
